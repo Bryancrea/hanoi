@@ -55,35 +55,38 @@ function solveIt() {
 }
 
 //cleans the screen and generates a new tower
-function clean(n) {
+function clean() {
     //remove every block
     from.innerHTML = end.innerHTML = temp.innerHTML = "";
     pos = [];
-    
     //clear the event queue to prevent overlapping
     for (var i in events) {
         clearTimeout(i);
     }
-    
+
+}
+
+function make(n) {
     // create a new tower by given height of size n
     for (var j = 1; j <= n; j++) {
         from.innerHTML += "<li id=" + blocksIds[j] + "></li>";
     }
-    
 }
 
 // When a new height is selected generate a new tower by the given option
 tower.onchange = function () {
     var pegs = tower.options[tower.selectedIndex].value;
-    clean(pegs);
+    clean();
+    make(pegs);
 }
 
 // Start solving the puzzle
 button.addEventListener("click", function () {
     // Generate a new tower everytime before solving it (see function definition above)
     var pegs = tower.options[tower.selectedIndex].value;  
-    clean(pegs);
+    clean();
     
+    make(pegs);
     //pre solve the tower behind the scenes (see function definition above)
     start(pegs, from, end, temp);
     
