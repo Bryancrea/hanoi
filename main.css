@@ -1,0 +1,137 @@
+* {
+ -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+}
+
+/* ============= MAIN =================*/ 
+
+
+#container {
+    margin: 0 auto;
+    height: 200px;
+    width: auto;
+}
+
+.wrapper {
+    margin: 100px auto 0 auto;
+    height: auto;
+    width: 960px;
+    border: 5px solid black;
+}
+.noborder {
+    border: none;
+    margin: 40px auto;
+}
+
+/* ============= control, start button and options ============== */
+#control {
+    margin: 0 auto;
+    width: 120px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+#button {
+    border: none;
+    background-color: #b2312f;
+    color: white;
+    font-weight: 300;
+    padding: 5px 20px;
+    border-radius: 20px;
+    box-shadow: -1px 2px 3px 0px black;
+}
+#button:hover {
+    cursor: pointer;
+}
+
+/* ================ Tower and background ================ */
+.bg {
+    width: 33.3333%;
+    height: 300px;
+    display: inline-block;
+    position: relative;
+    margin-bottom: -4px;
+}
+
+.tower {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    list-style: none;
+}
+.pole {
+    height: 150px;
+    width: 7px;
+    background-color: black;
+    box-shadow: inset 1px 0 5px 2px #969696;
+    border-radius: 10px 10px 0 0;
+    position: absolute;
+    margin: 0 auto;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+li {
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: inset 1px 0 5px 2px black;
+}
+
+#one {
+    height: 12px;
+    width: 24px;
+    background-color: #ff0f15;
+    right: 43%;
+}
+#two {
+    height: 12px;
+    width: 48px;
+    background-color: #0bb238;
+}
+#three {
+    height: 12px;
+    width: 72px;
+    background-color: #0c69b2;
+}
+#four {
+    height: 12px;
+    width: 96px;
+    background-color: #ffa111;
+}
+#five {
+    height: 12px;
+    width: 120px;
+    background-color: #b200a4;
+}
+#six {
+    height: 15px;
+    width: 144px;
+    background-color: #ff0f15;
+}
+#seven {
+    height: 15px;
+    width: 168px;
+    background-color: #0bb238;
+}
+#eight {
+    height: 15px;
+    width: 192px;
+    background-color: #0c69b2;
+}
+#nine {
+    height: 15px;
+    width: 216px;
+    background-color: #ffa111;
+}
+#ten {
+    height: 15px;
+    width: 240px;
+    background-color: #b200a4;
+}
+
